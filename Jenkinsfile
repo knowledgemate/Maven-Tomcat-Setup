@@ -9,16 +9,16 @@ pipeline {
                   }
 	}
 
-//        stage('compile') {
-//          steps {
-//           sh 'mvn compile'         
-//           }
-//			}
-//       stage('package') {
-//            steps {
-//                 sh 'pwd'
-//                sh 'mvn package'
-//            }		
-//        }
+        stage('compile') {
+          steps {
+           sh 'mvn compile'         
+           }
+			}
+       stage('package') {
+            steps {
+                 sh 'pwd'
+                sh 'mvn package'
+            }		
+        }
     }
 }
