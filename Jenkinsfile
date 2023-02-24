@@ -5,6 +5,7 @@ pipeline {
         stage('clone github code') {
             steps {  
               //  sh 'git clone https://github.com/rajulucky812/jenkins-docker-project.git ./jenkins-docker-project' 
+		       sh 'pwd'
                   }
 	}
 
