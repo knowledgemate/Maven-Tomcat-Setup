@@ -23,7 +23,7 @@ pipeline {
         }
        stage('deploy') {
             steps {
-                sh 'cp ./jenkins-docker-project/target/*.war /usr/share/tomcat/webapps/'
+                sh 'target/*.war /usr/share/tomcat/webapps/'
             }		
         }	    
     }
