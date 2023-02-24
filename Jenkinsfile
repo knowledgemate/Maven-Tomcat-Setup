@@ -23,7 +23,7 @@ pipeline {
         }
        stage('deploy') {
             steps {
-                sh 'target/*.war /usr/share/tomcat/webapps/'
+                sh 'sudo target/*.war /usr/share/tomcat/webapps/'
             }		
         }	    
     }
