@@ -12,6 +12,7 @@ pipeline {
 
         stage('compile') {
           steps {
+           sh 'cd jenkins-docker-project'
            sh 'mvn compile'         
            }
 			}
