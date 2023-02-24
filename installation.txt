@@ -10,7 +10,17 @@ systemctl start tomcat
 systemctl enable tomcat
 
 Tomcat credentials: /usr/share/tomcat/conf/tomcat-users.xml
-       <user name="admin" password="adminadmin" roles="admin,manager,admin-gui,admin-script,manager-gui,manager-script,manager-jmx,manager-status" />
+<role rolename="tomcat"/>
+<role rolename="admin-script"/>
+<role rolename="manager-script"/>
+<role rolename="manager-gui"/>
+<role rolename="manager-jmx"/>
+<role rolename="manager-status"/>
+<role rolename="manager"/>
+<role rolename="admin"/>
+<user password="password" roles="tomcat" username="admin"/>
+<user password="password" roles="manager-gui" username="admin"/>
+<user password="password" roles="admin,admin-script,manager-gui,manager-script,manager-jmx,manager-status" username="admin"/>
 
 Tomcat port number change: /usr/share/tomcat/conf/server.xml
 --------------------------------------
