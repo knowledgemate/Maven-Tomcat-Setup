@@ -3,15 +3,14 @@ pipeline {
 
     stages {
         stage('clone github code') {
-            steps {
-		sh 'rm -rf *'    
-                sh 'git clone https://github.com/rajulucky812/jenkins-docker-project.git .' 
-		sh    'pwd'
+            steps {  
+                sh 'git clone https://github.com/rajulucky812/jenkins-docker-project.git ./jenkins-docker-project' 
                   }
 	}
 
         stage('compile') {
           steps {
+           sh 'cd ./jenkins-docker-project'
            sh 'mvn compile'         
            }
 			}
