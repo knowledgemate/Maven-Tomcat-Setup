@@ -23,7 +23,7 @@ Tomcat credentials: /usr/share/tomcat/conf/tomcat-users.xml
 <user password="password" roles="admin,admin-script,manager-gui,manager-script,manager-jmx,manager-status" username="admin"/>
 
 Tomcat port number change: /usr/share/tomcat/conf/server.xml
---------------------------------------
+--------------------------------------,
 Jenkins in amazonlinux /centos:
 
 
