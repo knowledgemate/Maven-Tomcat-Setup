@@ -64,7 +64,7 @@
         <artifactId>tomcat7-maven-plugin</artifactId>
         <version>2.2</version>
     <configuration>
-        <url>http://localhost:8090/manager/text</url>
+        <url>http://54.85.47.64:8090/manager/text</url>
         <server>TomcatServer</server>
         <path>/ReoWebPage</path>
     </configuration>
@@ -117,7 +117,7 @@
   <distributionManagement>
     <snapshotRepository>
       <id>Snapshots</id>
-      <url>http://localhost:8081/repository/maven-snapshots/</url>
+      <url>http://100.25.221.208:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
