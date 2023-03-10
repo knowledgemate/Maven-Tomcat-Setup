@@ -1,3 +1,5 @@
+  /etc/maven/settings.xml
+
       <server>
       <id>TomcatServer</id>
       <username>admin</username>
