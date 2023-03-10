@@ -6,4 +6,7 @@ mvn install tomcat7:deploy
 
 
 Jenkins user connectivity:
+
 sudo su -s /bin/bash jenkins
+
+/var/lib/jenkins/.ssh/id_rsa.pub  copy to /root/.ssh/authorized_keys
