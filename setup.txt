@@ -1,3 +1,5 @@
+Server1: Tomcat
+
 git,tree,maven,java,tomcat intsallation in amazonlinux:  Please 8080 (Jenkins) 8090 (Tomcat)
 
 sudo amazon-linux-extras install java-openjdk11 -y
@@ -25,24 +27,8 @@ sudo systemctl start tomcat
 
 sudo systemctl enable tomcat
 --------------------------------------
-Jenkins in amazonlinux /centos:
 
-sudo amazon-linux-extras install java-openjdk11 -y
-
-sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
-
-sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
-
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key 
-
-sudo yum install jenkins -y
-
-sudo systemctl enable jenkins
-
-sudo systemctl start jenkins
-
-Jenkins password location: cat /var/lib/jenkins/secrets/initialAdminPassword
----------------------------------------------------------
+Server2: ubuntu
 Installation of nexus and sonar in Ubuntu --> Nexus 8081 and sonar 9000
 Nexus:
 sudo apt update
@@ -120,6 +106,25 @@ cd /opt/sonarqube/bin/linux-x86-64/
 
 Port : 9000
 Login to SonarQube  with default administrator username and password is admin.
+
+------------------------------------------------------------------------------------
+
+Jenkins in ubuntu:
+
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+
+sudo apt update
+
+sudo systemctl start jenkins
+
+sudo systemctl enable jenkins
+
+sudo systemctl start jenkins
+
+Jenkins password location: cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ------------------------------------------------------------------------------------
 
