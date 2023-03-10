@@ -48,7 +48,7 @@ pipeline {
             }
       stage("Deploy it to tomcat") {
             steps {
-            sh 'ssh -t -t root@54.85.47.64 -o StrictHostKeyChecking=no "mvn install tomcat7:deploy"'
+	    sh 'scp target/*.war root@54.85.47.64:/usr/share/tomcat/webapps/'    
             }
         }
 }
