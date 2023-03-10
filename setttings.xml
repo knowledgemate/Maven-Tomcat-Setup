@@ -1,0 +1,10 @@
+      <server>
+      <id>TomcatServer</id>
+      <username>admin</username>
+      <password>password</password>
+    </server>
+    <server>
+      <id>Snapshots</id>
+      <username>admin</username>
+      <password>18f6998b-aad4-4e1b-9ed7-7c67153aa914</password>
+    </server>
