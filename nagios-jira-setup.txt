@@ -1,0 +1,13 @@
+Nagios & Jira setup using Docker:
+Take Amazon Linux - 4 GB RAM 25 GB Hard disk
+
+Ports to open all... 
+yum install docker -y
+
+systemctl start docker 
+
+systemctl enable docker 
+
+docker run --name=jira -d -p 9000:8080 atlassian/jira-software
+
+docker run --name nagios4 -d -p 0.0.0.0:8080:80 jasonrivers/nagios:latest
